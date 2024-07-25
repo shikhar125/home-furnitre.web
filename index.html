@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClouxGame Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+
+}
+
+header {
+    background-color: #a8d08d;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+}
+
+.search-bar input {
+    padding: 12px;
+    border: 5px;
+    border-radius: 6;
+    border: 1px solid black;
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px; */
+    padding-right: 200%;  
+    
+    
+}
+
+.user-icons i {
+    font-size: 30px;
+    margin-left: 15px;
+    color: white;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: start;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.hero {
+    text-align: left;
+    background-image: url('best-furniture-for-your-home-2022-section-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 250px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    
+}
+.hero span{
+    font-size: 80px;
+    font-weight: bold;
+    
+    
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-buttons button:first-child {
+    background-color: #f57c00;
+    color: white;
+}
+
+.hero-buttons button:last-child {
+    background-color: white;
+    color: #f57c00;
+}
+
+.products, .more-products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product {
+    text-align: left;
+    margin: 50px;
+    
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 17px;
+    margin: 20px 10;
+    text-align: auto;
+   
+    
+}
+
+.product p {
+    margin: 10px 0;
+    
+}
+
+.price .original {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.sale-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.sale-banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.sale-banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: first baseline;
+}
+
+.sale-banner button {
+    padding: 15px 30px;
+    background-color: #f57c00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    width: fit-content;
+
+}
+.sale-banner img{
+     width: 40%;
+     height: 50%;
+     margin: 0 50%;
+}
+.brand1, .brand{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.brand{
+    text-align: left;
+    margin: 50px;
+}
+
+.brand img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #e2dede;
+    color: rgb(20, 18, 18);
+    padding: 50px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.footer-links .column h4 {
+    margin-bottom: 15px;
+    padding: 20px;
+    font-size: 23px;
+}
+
+.footer-links .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links .column ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: right;  
+    
+}
+
+.social-media i {
+    font-size: 34px;
+    margin: 0 10px;
+    cursor: pointer;  
+
+}
+
+.Topbar{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: start !important;
+    width: 100%;
+}
+.text{
+    font-size:  60%;
+    font-weight: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="Topbar">
+        <div class="navbar">
+            <div class="logo">CLOUD<span style="color: #f57c00;">XGAME</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Please enter a keyword">
+            </div>
+            <div class="user-icons">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Best Seller</li>
+                <li>Offer Zone</li>
+                <li>About Us</li>
+                <li>Sofas & Seating</li>
+                <li>Lamp & Lighting</li>
+                <li>Furniture</li>
+                <li>Home Decor</li>
+                <li>Mattresses</li>
+                <li>Modular</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Simple & Modern <br><span style=" background-color: #f57c00">Furniture</span></h1>
+            <p>UP TO 70% off everything</p>
+            <div class="hero-buttons">
+                <button>Add to Cart</button>
+                <button>Shop Now</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="1_83c8725a-29c0-4a78-829f-6ada4897ec67.jpg" alt="Product 1">
+                <h3>ATLAS COPCO</h3>
+                <p>DEWALT FlexVolt 60V Max 2.5 Gallon Cordless Air...</p>
+                <p class="price"><span class="original">₹80000/-</span> ₹70000/-</p>
+            </div>
+            <div class="product 2">
+                <img src="wooden-furniture-side-table.webp" alt="Product 2">
+                <h3>DEWALT</h3>
+                <p>DEWALT 1.6 HP, 15 Gallon, Portable Workshop...</p>
+                <p class="price"><span class="original">₹72000/-</span> ₹60000/-</p>
+            </div>
+            <div class="product 3">
+                <img src="images (1).jpeg" alt="Product 3">
+                <h3>ROLAIR</h3>
+                <p>Rol-Air 6-1/2 HP Belt Driver Twin Tank Gas-Powered Air...</p>
+                <p class="price"><span class="original">₹42000/-</span> ₹30000/-</p>
+            </div>
+            <div class="product 4">
+                <img src="red.jpeg"alt="Product 4">
+                <h3>ROLAIR</h3>
+                <p>Rol-Air 2.5 HP (115V) 6.5 CFM@9OPSI, 5.3 Gallon Cart ...</p>
+                <p class="price"><span class="original">₹22000/-</span> ₹10000/-</p>
+            </div>
+            <div class="product 5">
+                <img src="r.jpeg"alt="Product 5">
+                <h3>HITACHI</h3>
+                <p>Hitachi / Metabo 5.5 HP 8-Gallon Gas Powered ...</p>
+                <p class="price"><span class="original">₹52000/-</span> ₹40000/-</p>
+            </div>
+            </section>
+       
+        
+        <section class="sale-banner">
+            <h2>Real solution to save a lot</h2>
+            <p>Seized the <span style=" background-color: #f57c00;">BLACK FRIDAY SALE</span></p>
+            <p>Coupon code: "BLACK25"</p>
+            <button>Shop Now</button>
+        </section> 
+
+         <section class="more-products">
+            <div class="product">
+                <img src="chair.jpeg" alt="Product 1">
+                <h3>ATLAS COPCO</h3>
+                <p>DEWALT FlexVolt 60V Max 2.5 Gallon Cordless Air...</p>
+                <p class="price"><span class="original">₹80000/-</span> ₹70000/-</p>
+            </div> 
+            
+            <div class="product">
+                <img src="87.jpg" alt="Product 2">
+                <h3>DEWALT</h3>
+                <p>DEWALT 1.6 HP, 15 Gallonn Portable Workshop...</p>
+                <p class="price"><span class="original">₹72000/-</span> ₹60000/-</p>
+            </div>
+            
+            <div class="product">
+                <img src="light-blue-teak-wood-high-back-single-seater-sofa-500x500.webp" alt="Product3">
+                <h3>ROLAIR</h3>
+                <p>Rol-Air 6-1/2 HP Belt Drive Twin Tank Gas-Powered Air...</p>
+                <p class="price"><span class="original">₹42000/-</span> ₹30000/-</p>
+            </div>
+
+            <div class="product">
+                <img src="data_bookshelves-mdf_sia-book-shelf_exotic-teak-finish_updated_1-750x650.jpg" alt="Product 4">
+                <h3>ROLAIR</h3>
+                <p>ROL-Air 2.5 HP (115V) ^.5 CFM@90PSI, 5.3 Gallon Cart...</p>
+                <p class="price"><span class="original">₹22000/-</span> ₹10000/-</p>
+            </div>
+            
+            <div class="product">
+                <img src="wood.jpg" alt="Product 5">
+                <h3>HITACHI</h3>
+                <p>Hitach/ Metabo 5.5 HP 8-Gallon Gas Powered ...</p>
+                <p class="price"><span class="original">₹52000/-</span> ₹40000/-</p>
+            </div>
+        </section>
+
+        <section class="brand1">
+            <div class="brand">
+                <img src="Capture.PNG" alt="">
+            </div>
+
+            <div class="brand">
+                <img src="alpha.PNG" alt="">
+
+            </div>
+            <div class="brand">
+                <img src="tem.PNG" alt="">
+            </div>
+
+        </div>
+        <div class="brand">
+            <img src="hom.JPG" alt="">
+        </div>
+
+    </div>
+    <div class="brand">
+        <img src="ty.JPG" alt="">
+    </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo"></div>
+        <div class="footer-links">
+            <div class="column">
+                <h4><img src="eem.JPG" alt=""></h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.br<br>
+                Dolorem nobis maxime atque sit sequi ipsum illo natus labr<br>
+                ipsam quo voluptatum deleniti amet vel minus nemo sapienbr<br>
+                reprehenderit eum hic! Ab, officia exercitationem repudibr<br>
+                nostrum repellat cum nesciunt molestias, tempora neque qbr<br>
+                harum in cupiditate ad quam perferendis? Asperiores corrbr<br>
+                pariatur sint commodi eum enim labore accusamus, repellebr<br>
+                totam beatae cumque voluptas. Minus provident sit maximebr<br>
+                distinctio! Ducimus, accusamus quibusdam. Blanditiis ad br<br>
+                nemo quae a dolorem ullam commodi? Provident tenetur <br>
+                molestias odit ipsum ex eligendi a hic officiis omnis<br>
+            </div>
+            <div class="column">
+                <h4>CUSTOMER CARE</h4>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Accessibility Statement</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact Us</li>
+                    <li>Gift Card</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>HELP & SUPPORT</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Shipping Info</li>
+                    <li>Returns</li>
+                    <li>How To Order</li>
+                    <li>How To Track</li>
+                    <li>Size Guide</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>COMPANY INFO</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Blog</li>
+                    <li>Careers</li>
+                    <li>Store Locations</li>
+                    <li>Testimonial</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        <div class="icons">
+            <img src="Cash.JPG" alt="">
+            <img src="cut.JPG" alt="">
+            <img src="net.JPG" alt="">
+            <img src="upi.JPG" alt="">
+            <img src="visa.JPG" alt="">
+
+        </div>
+
+        <div class="text">
+            <h1>Copyright @2024 Hyperthemes All right resevered.</h1>
+        </div>
+    
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+     
+</body>
+</html> 
